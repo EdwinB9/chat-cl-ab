@@ -1,0 +1,28 @@
+# APIs de IA Gratuitas (configurar al menos una)
+
+# Google Gemini - IA generativa avanzada (NUEVO - RECOMENDADO)
+# Registrarse en: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=tu_gemini_api_key_aqui
+
+# Groq - Ultra rápido y gratuito
+# Registrarse en: https://console.groq.com
+GROQ_API_KEY=tu_groq_api_key_aqui
+
+# Hugging Face - Completamente gratuito
+# Registrarse en: https://huggingface.co
+HUGGINGFACE_API_KEY=tu_huggingface_token_aqui
+
+# Together AI - Modelos open source
+# Registrarse en: https://api.together.xyz
+TOGETHER_API_KEY=tu_together_api_key_aqui
+
+# Cohere - Gratuito para desarrollo
+# Registrarse en: https://dashboard.cohere.ai
+COHERE_API_KEY=tu_cohere_api_key_aqui
+
+# OpenAI - Requiere pago (opcional)
+# OPENAI_API_KEY=tu_openai_api_key_aqui
+
+# Configuración de la aplicación
+APP_DEBUG=false
+MAX_REQUESTS_PER_MINUTE=30

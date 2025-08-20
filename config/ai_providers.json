@@ -1,0 +1,41 @@
+{
+  "fallback_order": ["gemini", "groq", "huggingface", "together", "cohere", "openai"],
+  "providers": {
+    "gemini": {
+      "enabled": true,
+      "api_key_env": "GEMINI_API_KEY",
+      "default_model": "gemini-1.5-flash",
+      "rate_limit": {"calls_per_minute": 60}
+    },
+    "groq": {
+      "enabled": true,
+      "api_key_env": "GROQ_API_KEY",
+      "default_model": "llama3-8b-8192",
+      "rate_limit": {"calls_per_minute": 30}
+    },
+    "huggingface": {
+      "enabled": true,
+      "api_key_env": "HUGGINGFACE_API_KEY",
+      "default_model": "microsoft/DialoGPT-medium",
+      "rate_limit": {"calls_per_minute": 100}
+    },
+    "together": {
+      "enabled": true,
+      "api_key_env": "TOGETHER_API_KEY",
+      "default_model": "meta-llama/Llama-2-7b-chat-hf",
+      "rate_limit": {"calls_per_minute": 50}
+    },
+    "cohere": {
+      "enabled": true,
+      "api_key_env": "COHERE_API_KEY",
+      "default_model": "command-light",
+      "rate_limit": {"calls_per_minute": 20}
+    },
+    "openai": {
+      "enabled": false,
+      "api_key_env": "OPENAI_API_KEY",
+      "default_model": "gpt-3.5-turbo",
+      "rate_limit": {"calls_per_minute": 60}
+    }
+  }
+}

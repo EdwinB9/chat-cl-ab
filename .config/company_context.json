@@ -1,0 +1,27 @@
+{
+  "company_name": "Casa Limpia Colombia",
+  "mission": "Somos una empresa líder en servicios de limpieza y mantenimiento.",
+  "values": [
+    "Calidad",
+    "Compromiso",
+    "Responsabilidad",
+    "Excelencia"
+  ],
+  "communication_style": {
+    "tone": "Profesional y cercano",
+    "vocabulary": [
+      "colaboradores",
+      "equipo",
+      "familia Casa Limpia"
+    ],
+    "avoid": [
+      "empleados",
+      "trabajadores"
+    ]
+  },
+  "templates": {
+    "celebration": "En Casa Limpia celebramos...",
+    "recognition": "Queremos reconocer...",
+    "communication": "Estimado equipo Casa Limpia..."
+  }
+}

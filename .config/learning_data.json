@@ -1,0 +1,58 @@
+{
+  "examples": [
+    {
+      "id": "halloween_2024",
+      "occasion": "Halloween",
+      "text": "Hoy celebramos Halloween, una fecha que nos invita a recordar el valor de la creatividad, la imaginación y la alegría de compartir momentos especiales, incluso en medio de la rutina. En esta época llena de colores, disfraces y tradiciones, queremos reconocer el esfuerzo que cada uno de ustedes pone día a día para que nuestra compañía siga creciendo. Que este día sea una oportunidad para sonreír, disfrutar y renovar energías con un toque de magia. ¡Gracias por ser parte de esta Gran Familia Casalimpia y por ponerle el alma a todo lo que hacen!",
+      "type": "celebration",
+      "tags": [
+        "halloween",
+        "creatividad",
+        "familia",
+        "agradecimiento"
+      ]
+    },
+    {
+      "id": "operario_2024",
+      "occasion": "Día del Operario",
+      "text": "Gracias por ser el corazón que mantiene todo en orden. Hoy queremos detenernos un momento para reconocer, con profunda gratitud y admiración, la labor silenciosa, constante y valiente que realizan todos ustedes, nuestros operarios y operarias de limpieza. Ustedes son mucho más que parte de esta compañía: son el alma de nuestro servicio, el reflejo de nuestro compromiso y el motor que nos impulsa a seguir siendo líderes en lo que hacemos. Sabemos que su trabajo exige esfuerzo, disciplina y un corazón lleno de vocación. En Casalimpia, ustedes son nuestro activo más valioso, y no hay palabras suficientes para agradecer lo que hacen día a día. ¡Feliz Día del Operario de Limpieza!",
+      "type": "recognition",
+      "tags": [
+        "operarios",
+        "reconocimiento",
+        "gratitud",
+        "liderazgo"
+      ]
+    },
+    {
+      "id": "dia_raza_2024",
+      "occasion": "Día de la Raza",
+      "text": "Hoy, en el Día de la Raza, en Casalimpia, conmemoramos la riqueza cultural, histórica y étnica que nos caracteriza como sociedad y como organización. Esta fecha nos invita a reflexionar sobre el encuentro de culturas que marcó nuestra historia, y sobre la importancia de construir, desde el respeto y la inclusión, una convivencia que valore las diferencias y abrace la diversidad. Somos más de 16.000 colaboradores, cada uno con una historia, un origen, una identidad. Seguimos comprometidos con ser un lugar de trabajo donde todos se sientan respetados, incluidos y orgullosos de quienes son. ¡Feliz Día de la Raza!",
+      "type": "celebration",
+      "tags": [
+        "diversidad",
+        "inclusión",
+        "cultura",
+        "colaboradores"
+      ]
+    },
+    {
+      "id": "animales_2024",
+      "occasion": "Día de los Animales",
+      "text": "Celebramos este día con el objetivo de reconocer la importancia de todas las especies en el equilibrio del planeta y promover una relación más respetuosa entre los seres humanos y los animales. Esta fecha nos invita a reflexionar sobre el bienestar animal, la conservación de la biodiversidad y el compromiso con un mundo más justo para todos los seres vivos. Proteger a los animales no es solo un acto de compasión, sino una responsabilidad compartida.",
+      "type": "celebration",
+      "tags": [
+        "animales",
+        "biodiversidad",
+        "responsabilidad",
+        "compasión"
+      ]
+    }
+  ],
+  "feedback_history": [],
+  "user_preferences": {
+    "preferred_length": "medium",
+    "preferred_tone": "professional_warm",
+    "common_corrections": []
+  }
+}
