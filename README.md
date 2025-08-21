@@ -114,7 +114,7 @@ El sistema usa archivos en `.config/` (se crean automáticamente):
 - **`company_context.json`**: Información de la empresa, valores, servicios
 - **`learning_data.json`**: Ejemplos reales y preferencias aprendidas
 - **`correction_rules.json`**: Reglas de terminología y estilo
-- **`settings.json`**: Configuración de la aplicación
+
 
 ## 💡 Tips para Mejores Resultados
 

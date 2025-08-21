@@ -35,7 +35,7 @@ class FeedbackEntry:
     comments: str
     timestamp: str
     task_type: str  # "generate" o "correct"
-    category: Optional[str] = "General"
+    category: Optional[str] = "general"
     option_id: Optional[str] = None
 
 class ConfigManager:
@@ -125,32 +125,100 @@ class ConfigManager:
             default_learning_data = {
                 "examples": [
                     {
-                        "id": "halloween_2024",
-                        "occasion": "Halloween",
+                        "id": "prompt_halloween_2024",
+                        "occasion": "Prompt de Entrada - Halloween",
+                        "text": "Necesito un texto para celebrar Halloween con el equipo, destacando la creatividad, imaginación y alegría de compartir momentos especiales.",
+                        "type": "prompt_input",
+                        "tags": ["halloween", "creatividad", "familia", "agradecimiento"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_halloween_2024",
+                        "occasion": "Resultado Generado - Halloween",
                         "text": "Hoy celebramos Halloween, una fecha que nos invita a recordar el valor de la creatividad, la imaginación y la alegría de compartir momentos especiales, incluso en medio de la rutina. En esta época llena de colores, disfraces y tradiciones, queremos reconocer el esfuerzo que cada uno de ustedes pone día a día para que nuestra compañía siga creciendo. Que este día sea una oportunidad para sonreír, disfrutar y renovar energías con un toque de magia. ¡Gracias por ser parte de esta Gran Familia Casalimpia y por ponerle el alma a todo lo que hacen!",
-                        "type": "celebration",
-                        "tags": ["halloween", "creatividad", "familia", "agradecimiento"]
+                        "type": "generated_result",
+                        "tags": ["halloween", "creatividad", "familia", "agradecimiento"],
+                        "category": "generated_example"
                     },
                     {
-                        "id": "operario_2024",
-                        "occasion": "Día del Operario",
+                        "id": "prompt_operario_2024",
+                        "occasion": "Prompt de Entrada - Día del Operario",
+                        "text": "Quiero un texto para reconocer a nuestros operarios de limpieza en su día, destacando que son el corazón de la empresa y el activo más valioso.",
+                        "type": "prompt_input",
+                        "tags": ["operarios", "reconocimiento", "gratitud", "liderazgo"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_operario_2024",
+                        "occasion": "Resultado Generado - Día del Operario",
                         "text": "Gracias por ser el corazón que mantiene todo en orden. Hoy queremos detenernos un momento para reconocer, con profunda gratitud y admiración, la labor silenciosa, constante y valiente que realizan todos ustedes, nuestros operarios y operarias de limpieza. Ustedes son mucho más que parte de esta compañía: son el alma de nuestro servicio, el reflejo de nuestro compromiso y el motor que nos impulsa a seguir siendo líderes en lo que hacemos. Sabemos que su trabajo exige esfuerzo, disciplina y un corazón lleno de vocación. En Casalimpia, ustedes son nuestro activo más valioso, y no hay palabras suficientes para agradecer lo que hacen día a día. ¡Feliz Día del Operario de Limpieza!",
-                        "type": "recognition",
-                        "tags": ["operarios", "reconocimiento", "gratitud", "liderazgo"]
+                        "type": "generated_result",
+                        "tags": ["operarios", "reconocimiento", "gratitud", "liderazgo"],
+                        "category": "generated_example"
                     },
                     {
-                        "id": "dia_raza_2024",
-                        "occasion": "Día de la Raza",
+                        "id": "prompt_dia_raza_2024",
+                        "occasion": "Prompt de Entrada - Día de la Raza",
+                        "text": "Necesito un texto para el Día de la Raza que celebre la diversidad cultural de nuestros más de 16.000 colaboradores de todas las razas.",
+                        "type": "prompt_input",
+                        "tags": ["diversidad", "inclusión", "cultura", "colaboradores"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_dia_raza_2024",
+                        "occasion": "Resultado Generado - Día de la Raza",
                         "text": "Hoy, en el Día de la Raza, en Casalimpia, conmemoramos la riqueza cultural, histórica y étnica que nos caracteriza como sociedad y como organización. Esta fecha nos invita a reflexionar sobre el encuentro de culturas que marcó nuestra historia, y sobre la importancia de construir, desde el respeto y la inclusión, una convivencia que valore las diferencias y abrace la diversidad. Somos más de 16.000 colaboradores, cada uno con una historia, un origen, una identidad. Seguimos comprometidos con ser un lugar de trabajo donde todos se sientan respetados, incluidos y orgullosos de quienes son. ¡Feliz Día de la Raza!",
-                        "type": "celebration",
-                        "tags": ["diversidad", "inclusión", "cultura", "colaboradores"]
+                        "type": "generated_result",
+                        "tags": ["diversidad", "inclusión", "cultura", "colaboradores"],
+                        "category": "generated_example"
                     },
                     {
-                        "id": "animales_2024",
-                        "occasion": "Día de los Animales",
+                        "id": "prompt_animales_2024",
+                        "occasion": "Prompt de Entrada - Día de los Animales",
+                        "text": "Quiero un texto para el Día de los Animales que promueva la responsabilidad compartida en la protección y bienestar de todas las especies.",
+                        "type": "prompt_input",
+                        "tags": ["animales", "biodiversidad", "responsabilidad", "compasión"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_animales_2024",
+                        "occasion": "Resultado Generado - Día de los Animales",
                         "text": "Celebramos este día con el objetivo de reconocer la importancia de todas las especies en el equilibrio del planeta y promover una relación más respetuosa entre los seres humanos y los animales. Esta fecha nos invita a reflexionar sobre el bienestar animal, la conservación de la biodiversidad y el compromiso con un mundo más justo para todos los seres vivos. Proteger a los animales no es solo un acto de compasión, sino una responsabilidad compartida.",
-                        "type": "celebration",
-                        "tags": ["animales", "biodiversidad", "responsabilidad", "compasión"]
+                        "type": "generated_result",
+                        "tags": ["animales", "biodiversidad", "responsabilidad", "compasión"],
+                        "category": "generated_example"
+                    },
+                    {
+                        "id": "prompt_operario_mejorado",
+                        "occasion": "Prompt de Entrada - Día del Operario",
+                        "text": "Por favor dame un texto muy sentido sobre el día del operario de limpieza para colaboradores de una compañía que es líder en servicios de limpieza y que los colaboradores son lo más importante y el activo más valioso.",
+                        "type": "prompt_input",
+                        "tags": ["operario", "limpieza", "colaboradores", "liderazgo", "valor"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_operario_mejorado",
+                        "occasion": "Resultado Generado - Día del Operario",
+                        "text": "Hoy, en el Día del Operario de Limpieza, queremos detenernos un momento para reconocer, con profunda gratitud y admiración, la labor silenciosa, constante y valiente que realizan todos ustedes, nuestros operarios y operarias de limpieza. Ustedes son mucho más que parte de esta compañía: son el alma de nuestro servicio, el reflejo de nuestro compromiso y el motor que nos impulsa a seguir siendo líderes en lo que hacemos. Sabemos que su trabajo exige esfuerzo, disciplina y un corazón lleno de vocación. En nuestra empresa líder en servicios de limpieza, ustedes son nuestro activo más valioso, y no hay palabras suficientes para agradecer lo que hacen día a día. ¡Feliz Día del Operario de Limpieza!",
+                        "type": "generated_result",
+                        "tags": ["operario", "limpieza", "colaboradores", "liderazgo", "valor"],
+                        "category": "generated_example"
+                    },
+                    {
+                        "id": "prompt_raza_mejorado",
+                        "occasion": "Prompt de Entrada - Día de la Raza",
+                        "text": "Necesito que me des un texto sobre el día de la raza para un comunicado que se va a enviar a colaboradores de una compañía que tiene 16000 colaboradores de todas las razas.",
+                        "type": "prompt_input",
+                        "tags": ["día_raza", "diversidad", "colaboradores", "inclusión", "comunicado"],
+                        "category": "prompt_example"
+                    },
+                    {
+                        "id": "resultado_raza_mejorado",
+                        "occasion": "Resultado Generado - Día de la Raza",
+                        "text": "Hoy, en el Día de la Raza, conmemoramos la riqueza cultural, histórica y étnica que nos caracteriza como sociedad y como organización. Esta fecha nos invita a reflexionar sobre el encuentro de culturas que marcó nuestra historia, y sobre la importancia de construir, desde el respeto y la inclusión, una convivencia que valore las diferencias y abrace la diversidad. Somos más de 16.000 colaboradores, cada uno con una historia, un origen, una identidad única. En nuestra empresa, celebramos esta diversidad como una fortaleza que nos enriquece y nos hace más fuertes como equipo. Seguimos comprometidos con ser un lugar de trabajo donde todos se sientan respetados, incluidos y orgullosos de quienes son. ¡Feliz Día de la Raza!",
+                        "type": "generated_result",
+                        "tags": ["día_raza", "diversidad", "colaboradores", "inclusión", "comunicado"],
+                        "category": "generated_example"
                     }
                 ],
                 "feedback_history": [],
@@ -601,13 +669,16 @@ class MinimalChatBot:
             # Recargar desde configuración por defecto
             self.config_manager._ensure_default_configs()
     
-    def generate_text(self, prompt: str, preferred_provider: str = None) -> str:
+    def generate_text(self, prompt: str, preferred_provider: str = None, max_chars: int = 800) -> str:
         """Generar texto basado en el prompt del usuario"""
-        enhanced_prompt = self.build_enhanced_prompt(prompt, "generate")
+        enhanced_prompt = self.build_enhanced_prompt(prompt, "generate", max_chars)
+        
+        # Convertir caracteres a tokens aproximados (1 token ≈ 4 caracteres)
+        max_tokens = max_chars // 4
         
         result = self.ai_provider.generate_text(
             enhanced_prompt, 
-            max_tokens=800, 
+            max_tokens=max_tokens, 
             temperature=0.8,
             preferred_provider=preferred_provider
         )
@@ -617,7 +688,7 @@ class MinimalChatBot:
         else:
             return "❌ No se pudo generar contenido. Verifica que al menos un proveedor de IA esté configurado correctamente."
     
-    def generate_multiple_options(self, user_input: str, num_options: int = 3, preferred_provider: str = None) -> List[Dict]:
+    def generate_multiple_options(self, user_input: str, num_options: int = 3, preferred_provider: str = None, max_chars: int = 800) -> List[Dict]:
         """Generar múltiples opciones con enfoques creativos diferentes"""
         options = []
         
@@ -634,11 +705,14 @@ class MinimalChatBot:
             config = configurations[i % len(configurations)]
             
             # Construir prompt específico para este enfoque
-            enhanced_prompt = self._build_approach_specific_prompt(user_input, config["approach"])
+            enhanced_prompt = self._build_approach_specific_prompt(user_input, config["approach"], max_chars)
+            
+            # Convertir caracteres a tokens aproximados
+            max_tokens = max_chars // 4
             
             result = self.ai_provider.generate_text(
                 enhanced_prompt,
-                max_tokens=800,
+                max_tokens=max_tokens,
                 temperature=config["temp"],
                 preferred_provider=preferred_provider
             )
@@ -679,14 +753,14 @@ class MinimalChatBot:
             # Fallback a corrección básica
             return self._correct_text_intelligently(text)
     
-    def build_enhanced_prompt(self, user_input: str, task_type: str) -> str:
+    def build_enhanced_prompt(self, user_input: str, task_type: str, max_chars: int = 800) -> str:
         """Construir prompt mejorado basado en ejemplos y contexto"""
         if task_type == "generate":
-            return self._build_style_trained_prompt(user_input)
+            return self._build_style_trained_prompt(user_input, max_chars)
         else:
             return self._build_correction_prompt(user_input)
     
-    def _build_style_trained_prompt(self, user_input: str) -> str:
+    def _build_style_trained_prompt(self, user_input: str, max_chars: int = 800) -> str:
         """Construir prompt dinámico con múltiples enfoques creativos"""
         import random
         
@@ -718,47 +792,70 @@ class MinimalChatBot:
             "acción": ["impulsamos", "fortalecemos", "construimos", "cultivamos", "desarrollamos", "potenciamos"]
         }
         
-        # Construcción dinámica del prompt
-        prompt = f"""Eres un comunicador social creativo y experto para {company_context.get('company_name', 'Casa Limpia Colombia')}.
+        # Calcular longitud objetivo basada en max_chars
+        target_words = max_chars // 5  # Aproximación: 5 caracteres por palabra
+        
+        # Construcción del prompt fiel a los ejemplos
+        prompt = f"""Eres un comunicador social experto para {company_context.get('company_name', 'Casa Limpia Colombia')}.
 
 ENFOQUE CREATIVO: {approach.replace('_', ' ').title()}
 
-CONTEXTO DINÁMICO:
+CONTEXTO EMPRESARIAL:
 • Misión: {company_context.get('mission', 'Brindar servicios de limpieza de excelencia')}
 • Valores clave: {', '.join(random.sample(company_context.get('values', []), min(3, len(company_context.get('values', [])))))}
 • Audiencia: {company_context.get('target_demographics', {}).get('primary', 'Colaboradores internos')}
 
-PATRONES DE ESTILO IDENTIFICADOS:
+PATRONES DE ESTILO EXTRACTOS DE LOS EJEMPLOS:
 • Tono predominante: {style_patterns.get('tone', 'Profesional y cercano')}
 • Estructura típica: {style_patterns.get('structure', 'Introducción reflexiva → Desarrollo → Cierre motivacional')}
 • Longitud promedio: {style_patterns.get('avg_length', '200-250')} palabras
 • Elementos distintivos: {', '.join(style_patterns.get('distinctive_elements', []))}
 
-VOCABULARIO ENRIQUECIDO:
-{self._build_dynamic_vocabulary(vocabulary_sets, approach)}
+EJEMPLOS DE REFERENCIA (BASE TU ESTILO EN ESTOS):
+{self._build_detailed_style_references(examples, 3)}
 
-REFERENCIAS DE ESTILO (NO copiar, solo inspirarse):
-{self._build_style_references(examples, 2)}
+VOCABULARIO PREFERIDO (basado en ejemplos):
+{self._build_example_based_vocabulary(examples)}
 
 FEEDBACK VALORADO:
 {self._build_feedback_insights(recent_feedback)}
 
-DESAFÍO CREATIVO:
-Genera un texto original y fresco sobre "{user_input}" que:
-✨ Use un lenguaje rico y variado (evita repetir palabras comunes)
-🎯 Adapte el enfoque {approach} al contexto específico
-💫 Incorpore elementos únicos y sorprendentes
-🔄 Varíe la estructura respecto a textos anteriores
-🎨 Incluya metáforas o analogías relevantes cuando sea apropiado
+INSTRUCCIONES ESPECÍFICAS:
+Genera un texto sobre "{user_input}" que sea CONSISTENTE con el estilo de los ejemplos:
 
-DIRECTRICES ESPECÍFICAS:
-- Inicia de forma diferente cada vez (evita fórmulas repetitivas)
-- Usa sinónimos y variaciones para conceptos clave
-- Incorpora elementos del enfoque {approach}
-- Mantén autenticidad empresarial
-- Longitud: {self._get_dynamic_length(approach)} palabras
+🎯 **ESTILO CONSERVADOR:**
+- Mantén la estructura similar a los ejemplos (introducción reflexiva → desarrollo → cierre motivacional)
+- Usa el mismo tono emocional y profesional
+- Conserva la longitud típica de los ejemplos
+- Menciona "Casa Limpia" máximo 2 veces en todo el texto
+- Usa sinónimos para evitar repetición excesiva
 
-Genera SOLO el texto final, sin explicaciones:"""
+📝 **PATRONES A SEGUIR:**
+- Inicia con reflexión sobre la ocasión/evento
+- Desarrolla el mensaje con gratitud y reconocimiento
+- Cierra con motivación y agradecimiento
+- Usa vocabulario similar al de los ejemplos
+
+🔄 **VARIACIONES PERMITIDAS:**
+- Cambia palabras específicas (sinónimos)
+- Adapta el contexto al tema solicitado
+- Varía ligeramente la estructura de oraciones
+- Mantén la esencia emocional
+
+❌ **NO HAGAS:**
+- No cambies drásticamente el tono
+- No uses estructuras muy diferentes
+- No alteres la longitud significativamente
+- No cambies el enfoque emocional
+- No repitas el nombre de la empresa más de 2 veces
+- No uses "Casa Limpia" en cada párrafo
+
+📏 **LONGITUD OBJETIVA:**
+- Genera un texto de aproximadamente {target_words} palabras ({max_chars} caracteres)
+- Mantén la longitud dentro del rango solicitado
+- No excedas significativamente la longitud especificada
+
+Genera SOLO el texto final, manteniendo fidelidad al estilo de los ejemplos:"""
 
         return prompt
     
@@ -836,6 +933,89 @@ Genera SOLO el texto final, sin explicaciones:"""
         
         return refs
     
+    def _build_detailed_style_references(self, examples, num_refs):
+        """Construir referencias detalladas del estilo de los ejemplos"""
+        import random
+        
+        if not examples:
+            return "No hay ejemplos disponibles para analizar el estilo"
+        
+        selected = random.sample(examples, min(num_refs, len(examples)))
+        refs = ""
+        
+        for i, example in enumerate(selected, 1):
+            text = example.get("text", "")
+            occasion = example.get("occasion", "Ejemplo")
+            
+            # Analizar estructura del ejemplo
+            sentences = text.split('. ')
+            if len(sentences) >= 3:
+                intro = sentences[0] + "."
+                development = sentences[1] + "."
+                closing = sentences[-1] if sentences[-1].endswith('.') else sentences[-1] + "."
+                
+                refs += f"""
+{i}. {occasion}:
+   • Introducción: "{intro}"
+   • Desarrollo: "{development}"
+   • Cierre: "{closing}"
+   • Longitud: {len(text.split())} palabras
+   • Tono: {self._analyze_tone(text)}
+"""
+            else:
+                refs += f"{i}. {occasion}: {text[:150]}...\n"
+        
+        return refs
+    
+    def _build_example_based_vocabulary(self, examples):
+        """Construir vocabulario basado en los ejemplos existentes"""
+        if not examples:
+            return "No hay ejemplos disponibles"
+        
+        # Extraer palabras clave de los ejemplos
+        common_words = []
+        emotional_words = []
+        corporate_words = []
+        
+        for example in examples:
+            text = example.get("text", "").lower()
+            
+            # Palabras emocionales
+            if any(word in text for word in ["gratitud", "gracias", "reconocimiento", "admiración"]):
+                emotional_words.extend(["gratitud", "reconocimiento", "admiración", "agradecimiento"])
+            
+            # Palabras corporativas
+            if any(word in text for word in ["colaboradores", "equipo", "compañía", "empresa"]):
+                corporate_words.extend(["colaboradores", "equipo", "compañía", "empresa", "organización"])
+            
+            # Palabras comunes
+            if any(word in text for word in ["esfuerzo", "dedicación", "compromiso", "valores"]):
+                common_words.extend(["esfuerzo", "dedicación", "compromiso", "valores", "excelencia"])
+        
+        # Eliminar duplicados y limitar
+        emotional_words = list(set(emotional_words))[:5]
+        corporate_words = list(set(corporate_words))[:5]
+        common_words = list(set(common_words))[:5]
+        
+        vocab_text = f"""• Emocionales: {', '.join(emotional_words)}
+• Corporativas: {', '.join(corporate_words)}
+• Valores: {', '.join(common_words)}"""
+        
+        return vocab_text
+    
+    def _analyze_tone(self, text):
+        """Analizar el tono de un texto"""
+        text_lower = text.lower()
+        
+        if any(word in text_lower for word in ["gratitud", "gracias", "agradecimiento"]):
+            return "Gratitud y reconocimiento"
+        elif any(word in text_lower for word in ["celebramos", "felicitamos", "reconocemos"]):
+            return "Celebración y reconocimiento"
+        elif any(word in text_lower for word in ["esfuerzo", "dedicación", "compromiso"]):
+            return "Reconocimiento del esfuerzo"
+        else:
+            return "Profesional y cercano"
+    
     def _build_feedback_insights(self, recent_feedback):
         """Construir insights del feedback reciente"""
         if not recent_feedback:
@@ -860,12 +1040,15 @@ Genera SOLO el texto final, sin explicaciones:"""
         }
         return length_map.get(approach, "200-300")
     
-    def _build_approach_specific_prompt(self, user_input: str, approach: str) -> str:
+    def _build_approach_specific_prompt(self, user_input: str, approach: str, max_chars: int = 800) -> str:
         """Construir prompt específico para un enfoque creativo"""
         company_context = self.config_manager.load_json("company_context.json")
         learning_data = self.config_manager.load_json("learning_data.json")
         
         examples = learning_data.get("examples", [])
+        
+        # Calcular longitud objetivo
+        target_words = max_chars // 5
         
         # Instrucciones específicas por enfoque
         approach_instructions = {
@@ -894,28 +1077,46 @@ ENFOQUE ESPECÍFICO: {approach.replace('_', ' ').title()}
 INSTRUCCIONES PARA ESTE ENFOQUE:
 {approach_instructions.get(approach, 'Mantén el estilo profesional y cercano.')}
 
-VOCABULARIO SUGERIDO PARA ESTE ENFOQUE:
-{', '.join(approach_vocabulary.get(approach, []))}
-
 CONTEXTO EMPRESARIAL:
 • Misión: {company_context.get('mission', 'Brindar servicios de limpieza de excelencia')}
 • Valores: {', '.join(company_context.get('values', [])[:3])}
 
-EJEMPLO DE REFERENCIA (para el tono, NO para copiar):
-{examples[0].get('text', '')[:200] + '...' if examples else 'Sin ejemplos disponibles'}
+EJEMPLOS DE REFERENCIA (BASE TU ESTILO EN ESTOS):
+{self._build_detailed_style_references(examples, 2)}
+
+VOCABULARIO PREFERIDO (basado en ejemplos):
+{self._build_example_based_vocabulary(examples)}
 
 TAREA:
-Genera un texto completamente original sobre "{user_input}" usando el enfoque {approach.replace('_', ' ')}.
+Genera un texto sobre "{user_input}" que sea CONSISTENTE con el estilo de los ejemplos:
 
-REQUISITOS CREATIVOS:
-• Inicia de forma única y original
-• Usa vocabulario rico y variado
-• Incorpora el enfoque específico solicitado
-• Mantén la autenticidad de Casa Limpia
-• Longitud: 200-350 palabras
-• NO uses frases cliché o repetitivas
+🎯 **MANTENER FIDELIDAD:**
+- Usa la misma estructura de los ejemplos (introducción → desarrollo → cierre)
+- Mantén el mismo tono emocional y profesional
+- Conserva la longitud típica de los ejemplos
+- Usa vocabulario similar al de los ejemplos
 
-Genera ÚNICAMENTE el texto final:"""
+📝 **PATRONES A SEGUIR:**
+- Inicia con reflexión sobre la ocasión/evento
+- Desarrolla el mensaje con gratitud y reconocimiento
+- Cierra con motivación y agradecimiento
+- Menciona "Casa Limpia" máximo 2 veces en todo el texto y mínimo 0 veces
+- Usa sinónimos para evitar repetición (nuestra empresa, la organización, etc.)
+
+🔄 **VARIACIONES PERMITIDAS:**
+- Cambia palabras específicas (sinónimos)
+- Adapta el contexto al tema solicitado
+- Varía ligeramente la estructura de oraciones
+- Mantén la esencia emocional
+- Usa sinónimos para "empresa" (organización, compañía, nuestra casa)
+- Menciona "Casa Limpia" máximo 2 veces en todo el texto
+
+📏 **LONGITUD OBJETIVA:**
+- Genera un texto de aproximadamente {target_words} palabras ({max_chars} caracteres)
+- Mantén la longitud dentro del rango solicitado
+- No excedas significativamente la longitud especificada
+
+Genera ÚNICAMENTE el texto final, siendo fiel al estilo de los ejemplos:"""
 
         return prompt
     
@@ -969,7 +1170,7 @@ Proporciona ÚNICAMENTE el texto corregido, sin explicaciones:"""
         return corrected
     
     def add_feedback(self, original: str, generated: str, task_type: str, rating: int, 
-                    comments: str = "", category: str = "General", option_id: str = None):
+                    comments: str = "", category: str = "general", option_id: str = None):
         """Agregar feedback del usuario para aprendizaje"""
         learning_data = self.config_manager.load_json("learning_data.json")
         
